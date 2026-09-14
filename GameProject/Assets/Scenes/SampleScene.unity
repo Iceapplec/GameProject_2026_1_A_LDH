@@ -243,6 +243,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 02f13d27ae6671149a23509bb1772b38, type: 2}
+    - target: {fileID: 8914207829204841315, guid: b691c5214912ab6409972b77f0a0d10f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c93ad5afa4b62a6459a3db134a05f3f9, type: 2}
     - target: {fileID: 8994644247115177511, guid: b691c5214912ab6409972b77f0a0d10f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -255,6 +259,11 @@ PrefabInstance:
 --- !u!4 &81592943 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -6601043233671942095, guid: b691c5214912ab6409972b77f0a0d10f, type: 3}
+  m_PrefabInstance: {fileID: 81592942}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &81592944 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8914207829204841315, guid: b691c5214912ab6409972b77f0a0d10f, type: 3}
   m_PrefabInstance: {fileID: 81592942}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &330585543
@@ -813,7 +822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 869f56e2550cc9d47828bba59327cc13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  animator: {fileID: 0}
+  animator: {fileID: 81592944}
   cameraTransform: {fileID: 330585546}
   walkSpeed: 3
   runSpeed: 6
