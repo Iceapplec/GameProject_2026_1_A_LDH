@@ -10,6 +10,8 @@ public class PickupItem : MonoBehaviour
 
     [SerializeField] private int amount = 1;
 
+    [SerializeField] QuestManager questManager;
+
     [Header("화면 연출")]
 
     [SerializeField] private float rotationSpeed = 60f;
@@ -19,6 +21,11 @@ public class PickupItem : MonoBehaviour
     [SerializeField] private float floatingSpeed = 2f;
 
     private Vector3 startPosition;
+
+    public void Awake()
+    {
+        questManager = FindFirstObjectByType<QuestManager>();
+    }
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -39,6 +46,7 @@ public class PickupItem : MonoBehaviour
     public void Collect()
     {
         Debug.Log(itemName + " " + amount + "개 획득");
+        questManager.AddQuestItem(itemName, amount);
         Destroy(gameObject);
     }
 }
