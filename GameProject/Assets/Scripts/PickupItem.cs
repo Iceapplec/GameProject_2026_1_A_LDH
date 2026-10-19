@@ -2,6 +2,7 @@ using System.ComponentModel.Design;
 using Unity.VisualScripting;
 using UnityEngine;
 
+
 public class PickupItem : MonoBehaviour
 {
     [Header("아이템 정보")]
